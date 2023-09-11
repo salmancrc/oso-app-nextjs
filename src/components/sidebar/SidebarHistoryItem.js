@@ -1,7 +1,6 @@
 import React from 'react'
-import SidebarHistoryItemContent from './SidebarHistoryItemContent'
 
-const SidebarHistoryItem = ({ title }) => {
+const SidebarHistoryItem = ({ title, children }) => {
     return (
         <div className='relative h-auto opacity-100'>
             <div className='sticky top-0 z-[16] mb-3 bg-gray-700'>
@@ -9,8 +8,7 @@ const SidebarHistoryItem = ({ title }) => {
                     {title}
                 </h3>
             </div>
-            <SidebarHistoryItemContent />
-            <SidebarHistoryItemContent />
+            {children}
         </div>
     )
 }
