@@ -25,7 +25,7 @@ const SidebarFooter = () => {
 
     return (
         <>
-            <div>
+            <div className='pr-8'>
                 <div className='border-b border-gray-50 pb-4'>
                     <button className='text-xs text-gray-100 font-secondary pr-6'>Clear Search History</button>
                     <button className='text-xs text-purple font-secondary' onClick={openReportModal}>Report issue</button>
