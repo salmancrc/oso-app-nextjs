@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply font-primary
+}
+
+.theme-btn{
+    @apply bg-purple text-white h-12 py-2.5 px-6 border border-purple font-secondary text-sm font-medium text-center rounded flex items-center justify-center
+}
+
+.white-btn{
+  @apply bg-white text-purple h-12 py-2.5 px-6 border border-purple font-secondary text-sm font-medium text-center rounded flex items-center justify-center
+}
+
+.btn-padding-xy {
+  padding: 10px 24px;
+}
+
+.fill-org{
+    fill: #605D64;
+}
+
+  .custom-scrollbar {
+    scrollbar-width: auto;
+    scrollbar-color: #969696 #ffffff;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #F7F7F5;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #d6d6d6;
+    border-radius: 10px;
+  }
