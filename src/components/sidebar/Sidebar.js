@@ -18,12 +18,12 @@ const Sidebar = () => {
             }
             <div
                 className='flex-shrink-0 overflow-x-hidden h-full'>
-                <div className='px-8 pt-8 pb-10 h-full'>
+                <div className='ps-8 pt-8 pb-10 h-full'>
                     <div className='flex h-full min-h-0 flex-col '>
                         <div className='relative h-full w-full flex-1 items-start'>
                             <nav className='flex h-full w-full flex-col'>
                                 {/* Header */}
-                                <SidebarHeader/>
+                                <SidebarHeader />
                                 {/* History */}
                                 <SidebarHistory />
 

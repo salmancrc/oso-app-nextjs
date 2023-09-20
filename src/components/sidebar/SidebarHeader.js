@@ -3,7 +3,7 @@ import React from 'react'
 
 const SidebarHeader = () => {
     return (
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between pr-8'>
             <Image src={'/assets/images/sidebar-logo.svg'} width={32} height={46} alt='logo' />
             <button className='flex items-center gap-2 text-purple font-secondary text-sm font-medium'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">

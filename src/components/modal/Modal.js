@@ -16,7 +16,9 @@ const customStyles = {
         borderRadius: '16px',
         padding: '24px',
         transform: 'translate(-50%, -50%)',
-        transition: 'transform 0.3s ease-in-out'
+        transition: 'transform 0.3s ease-in-out',
+        width: 'calc(100% - 32px)',
+        maxWidth: '450px'
     }
 };
 
