@@ -6,6 +6,12 @@ import CancelModal from '../modal/CancelModal';
 const SidebarFooter = () => {
     const [modalIsLogout, setIsLogout] = useState(false);
     const [modalIsReport, setIsReport] = useState(false);
+    const [text, setText] = useState('')
+
+    function handlchange(e) {
+        let value = e.target.value;
+        setText(value)
+    }
 
     function openLogoutModal() {
         setIsLogout(true);
@@ -76,11 +82,14 @@ const SidebarFooter = () => {
             <ModalComponent modalIsOpen={modalIsReport} closeModal={closeReportModal}>
                 <div>
                     <h3 className='text-lg font-bold font-primary pb-2 w-auto md:w-[400px]'>please be as detailed as possible to aid us in troubleshooting process.</h3>
-                    <div className='relative mt-5 mb-[30px]'>
-                        <label for="message" class="absolute left-4 top-[-10px] font-secondary bg-white text-xs text-gray-300 px-[5px] ">Tell us more</label>
-                        <textarea
-                            className='rounded border h-[112px] border-gray-200 resize-none w-full py-4 pl-6 pr-11 text-sm tracking-wider text-black font-secondary overflow-y-auto focus:outline-none custom-scrollbar'
-                        ></textarea>
+                    <div className='relative transition-all mt-5 mb-[30px]'>
+                        <textarea id='message' value={text}
+                            onChange={handlchange}
+                            className='transition-all duration-200 p-4 h-[112px] input-text font-secondary font-normal resize-none border-gray-200 border w-full text-base outline-none text-black placeholder-gray-300 rounded peer' />
+
+                        <label
+                            htmlFor='message'
+                            className={`transition-all duration-300 absolute cursor-text left-4 top-3.5 text-base peer-focus:-translate-y-6 peer-focus:bg-white peer-focus:px-1 z-10 peer-focus:text-gray-300 peer-focus:left-3 peer-focus:text-xs ${text ? "-translate-y-6 bg-white text-gray-300 left-3 text-xs" : null}`}>Tell us more</label>
                     </div>
 
                     <div className='flex justify-end gap-4'>

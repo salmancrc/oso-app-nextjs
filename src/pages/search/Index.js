@@ -14,7 +14,7 @@ export default function Search() {
                 <div className='relative flex h-full max-w-full flex-1 overflow-hidden'>
                     <main className='relative h-full w-full transition-width overflow-auto flex-1'>
                         <div className='mx-auto max-w-[934px] w-full h-full relative opacity-1 md:bg-opacity-80'>
-                            <div className='py-10'>
+                            <div className='py-10 pt-0 relative top-[45px] h-[79%] overflow-auto custom-scrollbar'>
                                 <InitialViewUI />
                             </div>
                             <SearchBottom />
